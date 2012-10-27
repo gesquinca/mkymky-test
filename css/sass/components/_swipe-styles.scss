@@ -1,0 +1,18 @@
+// SWIPE SLIDER STYLES
+//
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+
+	> div {
+		position: relative;
+		float:left;
+		width: 100%;
+	}
+}

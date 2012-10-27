@@ -1,0 +1,60 @@
+// Structure
+// =============================================================================
+
+// @include breakpoint(4){}
+@include breakpoint(0, 6, $label: 'small'){
+	// .text {display: none;}
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.grid {
+		// display:block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+// @include breakpoint(4){}
+// @include breakpoint(6){}
+@include breakpoint(8){}
+@include breakpoint(10){}
+@include breakpoint(12){}
+
+@include breakpoint(0, 13, $orientation: landscape, $label: 'landscape'){
+	head {font-family: "landscape"; }
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.grid {display: none;}
+
+	.slide-container {
+		display:block;
+		margin: 0;
+	}
+	// .swipe {background: #000;}
+	.content {
+		background: #000;
+	}
+}
+
+@include breakpoint(14, $label: 'mid'){
+	.text {display: block;}
+
+	.grid {
+		display: block;
+		margin: 0 -0.5 * em($grid-gutter);
+	}
+
+	.thumbnail {
+		width: fluid(1, 12);
+	}
+
+	.content {
+		background: green;
+	}
+}
+
+@include breakpoint(22){}

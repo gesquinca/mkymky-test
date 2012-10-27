@@ -1,0 +1,44 @@
+// ================================================================
+// normalize config
+// ================================================================
+
+$normalize-html5: true;
+$normalize-base: true;
+
+// $normalize-links: true;
+// $normalize-typography: true;
+// $normalize-lists: true;
+// $normalize-embedded: true;
+// $normalize-forms: true;
+// $normalize-tables: true;
+
+// other resets
+// ================================================================
+
+// $print-styles: true;
+
+// ================================================================
+// Modular Scale Config
+// ================================================================
+
+$base-font: 14px;
+$base-target: 46px;
+
+$ratio: golden();
+$base-size: $base-font $base-target;
+
+// ================================================================
+// Grid Variables
+// ================================================================
+
+$grid-column: ms(6);
+$grid-gutter: ms(1);
+
+$grid-overlay: false; // generate visual grid overlay
+// $ie-support: 9; // fallback breakpoint
+
+$base-font-size: ms(0);
+
+// ================================================================
+// project specific variables and mixins
+// ================================================================
